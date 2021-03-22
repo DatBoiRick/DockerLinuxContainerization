@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Docker and Linux Introduction</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+
+    <title>Docker and Linux Introduction</title>
+
+<body>
+
+      <header>
+  <div class="bg-dark collapse" id="navbarHeader" style="">
+    <div class="container fluid bg-dark">
+      <div class="row">
+        <div class="col-sm-8 col-md-12 py-4">
+          <div class="list-group">
+          <a href="Docker.html" class="list-group-item list-group-item-action list-group-item-light font-monospace">Docker Container</a>
+          <a href="Linux.html" class="list-group-item list-group-item-action list-group-item-light font-monospace">Linux Commands</a>
+          <a href="CVV.html" class="list-group-item list-group-item-action list-group-item-light font-monospace">Container vs. Virtual</a>
+          <a href="Tutorial.html" class="list-group-item list-group-item-action list-group-item-light font-monospace">Web Server Tutorial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="Home.html" class="navbar-brand d-flex align-items-center font-monospace">Docker and Linux Introduction</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="container overflow-hidden">
+  <div class="row gy-4">
+    <div class="col-3">
+  <!-- Content here -->
+</div>
+
+<div class="container overflow-hidden">
+  <div class="row gy-4">
+    <div class="col-3">
+  <!-- Content here -->
+</div>
+
+
+
+<div class="card">
+  <img src="https://linuxcommand.org/images/Screenshot-Terminal.png" height="400" width="500"class="card-img" alt="...">
+  <div class="card-img-overlay">
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-4 col-md-8 mx-auto">
+        <h1 class="text-white font-monospace">Basic Linux Commands</h1>
+        <p class="text-white font-monospace">Learn the basic with these commands and take more control of your own terminal</p><p></p>
+      </div>
+    </div>
+  </section>
+  </div>
+</div>
+
+<div class="container overflow-hidden">
+  <div class="row gy-4">
+    <div class="col-3">
+  <!-- Content here -->
+</div>
+      <div class="row">
+    <div class="col-md-8">
+
+      <article class="blog-post">
+        <h1 class="blog-post-title">So what is Linux?</h1>
+        <p>Linux is an operating system's kernel. You might have heard of UNIX. Well, Linux is a UNIX clone. But it was actually created by Linus Torvalds from Scratch. Linux is free and open-source, that means that you can simply change anything in Linux and redistribute it in your own name! There are several Linux Distributions, commonly called “distros”.</p>
+        <ul>
+          <li>Ubuntu Linux</li>
+          <li>Red Hat Enterprise Linux</li>
+          <li>Linux Mint</li>
+          <li>Debian</li>
+          <li>Fedora</li>
+        </ul>
+        <p>Linux is Mainly used in servers. About 90% of the internet is powered by Linux servers. This is because Linux is fast, secure, and free! The main problem of using Windows servers are their cost. This is solved by using Linux servers. The OS that runs in about 80% of the smartphones in the world, Android, is also made from the Linux kernel. Most of the viruses in the world run on Windows, but not on Linux!</p>
+        <hr>
+        <h3 class="blog-post-title">The Terminal</h3>
+<p>So, basically, a shell is a program that receives commands from the user and gives it to the OS to process, and it shows the output. Linux's shell is its main part. Its distros come in GUI (graphical user interface), but basically, Linux has a CLI (command line interface). In this tutorial, we are going to cover the basic commands that we use in the shell of Linux.</p>
+
+        <img src="https://maker.pro/storage/CgR0cNL/CgR0cNLK77aJYQHyxQYBKNy1mUv1FN5vBEeGCerZ.jpeg" height="400px" width="400px" class="card-img" alt="...">
+
+        <p>To open the terminal, press Ctrl+Alt+T in Ubuntu, or press Alt+F2, type in gnome-terminal, and press enter. In Raspberry Pi, type in lxterminal. There is also a GUI way of taking it, but this is better!</p>
+        <hr>
+        <h3 class="blog-post-title">Linux Commands</h3>
+
+        <p><strong>1. pwd —</strong> When you first open the terminal, you are in the home directory of your user. To know which directory you are in, you can use the <strong>“pwd”</strong> command. It gives us the absolute path, which means the path that starts from the root. The root is the base of the Linux file system. It is denoted by a forward slash( / ). The user directory is usually something like "/home/username".
+                <img src="https://maker.pro/storage/zY0aprE/zY0aprEyMtOxLhiyyRKWvY3vwB9cPJJQtxubemw6.png" height="50px" width="300px" class="card-img" alt="...">
+        </p>
+        <hr>
+        <p><strong>2. ls —</strong> Use the "ls" command to know what files are in the directory you are in. You can see all the hidden files by using the command <strong>“ls -a”</strong>.
+                        <img src="https://maker.pro/storage/NyJ4zSC/NyJ4zSCkkRu7x2IlvNeDpu9ea4Q7cWDxoB5vLJHk.png" height="125px" width="300px" class="card-img" alt="...">
+        </p>
+        <hr>
+        <p><strong>3. cd —</strong> Use the <strong>"cd"</strong> command to go to a directory. For example, if you are in the home folder, and you want to go to the downloads folder, then you can type in <strong>“cd Downloads”</strong>. Remember, this command is case sensitive, and you have to type in the name of the folder exactly as it is. But there is a problem with these commands. Imagine you have a folder named “Raspberry Pi”. In this case, when you type in <strong>“cd Raspberry Pi”</strong>, the shell will take the second argument of the command as a different one, so you will get an error saying that the directory does not exist. Here, you can use a backward slash. That is, you can use <strong>“cd Raspberry\ Pi”</strong> in this case. Spaces are denoted like this: If you just type <strong>“cd”</strong> and press enter, it takes you to the home directory. To go back from a folder to the folder before that, you can type <strong>“cd ..”</strong> . The two dots represent back.
+                        <img src="https://maker.pro/storage/WAhryqs/WAhryqsvfDeEeyrO2eKIfIvca4C3hSTrSzWXmTFW.png" height="125px" width="300px" class="card-img" alt="...">
+        </p>
+        <hr>
+        <p><strong>4. mkdir & rmdir —</strong> Use the <strong>mkdir</strong> command when you need to create a folder or a directory. For example, if you want to make a directory called “DIY”, then you can type <strong>“mkdir DIY”</strong>. Remember, as told before, if you want to create a directory named “DIY Hacking”, then you can type <strong>“mkdir DIY\ Hacking”</strong>. Use <strong>rmdir</strong> to delete a directory. But <strong>rmdir</strong> can only be used to delete an empty directory. To delete a directory containing files, use <strong>rm</strong>.
+                        <img src="https://maker.pro/storage/fZHiKDk/fZHiKDkI6X950pnqyFDNLUuVvXnCGE3W2LqLjN3w.png" height="125px" width="300px" class="card-img" alt="...">
+        </p>
+        <hr>
+        <p><strong>5. rm -</strong> Use the <strong>rm</strong> command to delete files and directories.  Use <strong>"rm -r"</strong> to delete just the directory. It deletes both the folder and the files it contains when using only the <strong>rm</strong> command.
+                        <img src="https://maker.pro/storage/TVtSlJ0/TVtSlJ0xCOT0TrjQCxdlznSErV7s8ip5D1uQaO29.png" height="125px" width="300px" class="card-img" alt="...">
+        </p>
+        <hr>
+        <p><strong>6. touch —</strong> The <strong>touch</strong> command is used to create a file. It can be anything, from an empty txt file to an empty zip file. For example, <strong>“touch new.txt”</strong>.
+                        <img src="https://maker.pro/storage/xQ2pP99/xQ2pP99oGhjN1fisLfllUSp3BYFne9Gt1hdBAvMX.png" height="125px" width="300px" class="card-img" alt="...">
+        </p>
+        <hr>
+        <p><strong>7. man & --help —</strong> To know more about a command and how to use it, use the <strong>man</strong> command. It shows the manual pages of the command. For example, <strong>“man cd”</strong> shows the manual pages of the cd command. Typing in the command name and the argument helps it show which ways the command can be used (e.g., <strong>cd –help</strong>).
+                        <img src="https://maker.pro/storage/Qxqv1yX/Qxqv1yXm9DdmwS11frqfVthgmSvGCBTwjf7YQ4kw.png" height="250px" width="300px" class="card-img" alt="...">
+        </p>
+        <hr>
+        <p><strong>8. cp —</strong> Use the <strong>cp</strong> command to copy files through the command line. It takes two arguments: The first is the location of the file to be copied, the second is where to copy.
+                        <img src="https://maker.pro/storage/r3Jci3Z/r3Jci3ZGSACziRezSh8vmHiATZ5rFqY8CtOcM4Aj.png" height="125px" width="300px" class="card-img" alt="...">
+        </p>
+        <hr>
+        <p><strong>9. mv —</strong> Use the <strong>mv</strong> command to move files through the command line. We can also use the <strong>mv</strong> command to rename a file. For example, if we want to rename the file <strong>“text”</strong> to <strong>“new”</strong>, we can use <strong>“mv text new”</strong>. It takes the two arguments, just like the <strong>cp</strong> command.
+                        <img src="https://maker.pro/storage/XfrXwxx/XfrXwxxdZUV66PCQdcFLDMkxRw58i6fLGrjjNbcV.png" height="125px" width="300px" class="card-img" alt="...">
+        </p>
+        <hr>
+        <p><strong>10. locate —</strong> The <strong>locate</strong> command is used to locate a file in a Linux system, just like the search command in Windows. This command is useful when you don't know where a file is saved or the actual name of the file. Using the -i argument with the command helps to ignore the case (it doesn't matter if it is uppercase or lowercase). So, if you want a file that has the word “hello”, it gives the list of all the files in your Linux system containing the word "hello" when you type in <strong>“locate -i hello”</strong>. If you remember two words, you can separate them using an asterisk (*). For example, to locate a file containing the words "hello" and "this", you can use the command <strong>“locate -i *hello*this”</strong>.
+                         <img src="https://maker.pro/storage/OLS3n8S/OLS3n8S30SLUxjlxdmIhd0bHnTc2q12Cy0gudkcU.png" height="125px" width="300px" class="card-img" alt="...">
+          </p>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+
+<div class="container overflow-hidden">
+  <div class="row gy-4">
+    <div class="col-3">
+  <!-- Content here -->
+</div>
+
+</main>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

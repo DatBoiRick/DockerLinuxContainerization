@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Docker and Linux Introduction</title>
+    <link href="Home.html" rel="stylesheet" />
+  </head>
+
+    <title>Docker and Linux Introduction</title>
+
+<body>
+
+      <header>
+  <div class="bg-dark collapse" id="navbarHeader" style="">
+    <div class="container fluid bg-dark">
+      <div class="row">
+        <div class="col-sm-8 col-md-12 py-4">
+          <div class="list-group">
+          <a href="Docker.html" class="list-group-item list-group-item-action list-group-item-light font-monospace">Docker Introduction</a>
+          <a href="Linux.html" class="list-group-item list-group-item-action list-group-item-light font-monospace">Linux Commands</a>
+          <a href="CVV.html" class="list-group-item list-group-item-action list-group-item-light font-monospace">Container vs. Virtual</a>
+          <a href="Tutorial.html" class="list-group-item list-group-item-action list-group-item-light font-monospace">Web Server Tutorial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="Home.html" class="navbar-brand d-flex align-items-center font-monospace">Docker and Linux Introduction</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+
+
+  <div class="card">
+  <img src="https://blog.gurock.com/wp-content/uploads/2020/03/TR_Virtual_Machine_Container_2.png" class="card-img" alt="...">
+  <div class="card-img-overlay">
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-28 mx-auto">
+        <h1 class="text-white font-monospace">Containerization</h1>
+        <h1 class="text-white font-monospace">vs.</h1>
+        <h1 class="text-white font-monospace">Virtualization</h1>
+        <p class="text-white font-monospace">These two tutorials will walk you through how to setup a web server on your local computer using docker and how to connect Docker with Pycharm to write python code.   </p><p></p>
+      </div>
+    </div>
+  </section>
+  </div>
+</div>
+
+<div class="container overflow-hidden">
+  <div class="row gy-4">
+    <div class="col-3">
+  <!-- Content here -->
+</div>
+
+  <div class="container px-8">
+  <div class="row gx-10">
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Containerization</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Virtualization</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Comparison</button>
+    </li>
+  </ul>
+
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="row">
+        <div class="col-md-20">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">Containerization</h3>
+            <article class="blog-post">
+              <h2 class="blog-post-title">What is Containerization?</h2>
+                <p>Containerization is a strategy of bringing Virtualization to the OS-level. Though Virtualization is an abstraction to the hardware, containerization brings abstraction of OS. Containerization is more efficient because there is no guest OS to utilize a host’s OS and do not have to share relevant libraries and resources, unlike virtual machines. Containers works on bare-metal systems, cloud instances, and virtual machines, across Linux, Windows, and Mac. Containerization is a lightweight alternative to full machine virtualization that involves encapsulating an application in a container with its OS. Containerization boots up in a fraction of seconds; this is because Container shares host OS and holds only those application which is related to binaries and libraries. </p>
+                <img src="https://www.cloudmanagementinsider.com/wp-content/uploads/2019/09/containerization-daigram-768x524.jpg" class="d-block w-100 rounded image-fluid" alt="Responsive image"></p>
+                <hr>
+                <p>In the above diagram, as you see, there is one host OS shared by all containers. Containers only contain applications specific to libraries that are isolated from other containers leading to no wastage of resources. This makes the container deployments faster and more reliable.</p>
+                <h3>There are noticeable differences between these two terms, which are as follows: </h3>
+                <p><strong>1. The advantage of multiple copies:</strong> one of the major points that differentiate these two processes is containers’ temporary behavior. Many copies of a container can exist at the same time in a system like orchestration. If any containers failed, one can remove that and replace it, and there will be no change or impact on service. Older versions can exist at the same time with the new versions. Removal and replacement of the new versions can be done easily if any operation gets failed. </p>
+                <p><strong>2. Scaling related workloads</strong>There is a vast difference between the scalability of a containerized workload and a virtual workload. The containers contain only those services which are basic in nature and which their functions require, but among those services, one can be a web server like Nginx and virtualization workload system, like cabernets, having the capability of judging that when there is a need of scaling out the number of containers based on the sequence of traffic follows and can copy the images of the container on its own and also remove them from the system.</p>
+                <p><strong>3. Foundation for running an application:</strong>the Linux containers format is the foundation for containerization format. So, containerization can only run the Linux application as it will support only the Linux environment.</p>
+                <p><strong>4. Using microservices architecture:</strong>Google firstly uses the architecture “microservices” and then by Netflix. One can operate these systems without excluding any single application. In the form of functions, they perform small workloads that may be contacted through API, and they perform different functions. These functions can be seen in traditional applications, although many applications can perform the same functions on repeat.</p>
+            </article><!-- /.blog-post -->
+        </div>
+      </div>
+    </div>
+
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="row">
+        <div class="col-md-20">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">Virtualization</h3>
+            <article class="blog-post">
+                <h2 class="blog-post-title">What is Virtualization?</h2>
+                <p>It is a general approach for getting out of in-house hardware assets. In the beginning, this technique was a revelation because it allowed developers to run multiple OS(Operating system) in different VMs (virtuals machines) all running on the same host. This dissolved the need for extra hardware resources. </p>
+                <p>Let’s have a look at some Pros:
+                <p>-Multiple OS can run at the same time</p>
+                <p>-Easy recovery and maintenance in a condition of failure case</p>
+                <p>-Due to less usage/need for infrastructure total cost of ownership came down </p>
+                <img src="https://www.cloudmanagementinsider.com/wp-content/uploads/2019/09/virtualization-daigram-696x702.jpg" class="d-block w-100 rounded image-fluid" alt="Responsive image"></p>
+                <hr>
+                <p>These are some Cons of Virtualization</p>
+                <p>1. Unstable performance because of running multiple VMs </p>
+                <p>2. The efficiency of Hypervisors is not as good as the host OS</p>
+                <p>3. Long boot-up time</p>
+            </article><!-- /.blog-post -->
+        </div>
+      </div>
+    </div>
+
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+      <div class="row">
+        <div class="col-md-20">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">Comparison</h3>
+            <article class="blog-post">
+                <h2 class="blog-post-title">Containization vs Virtualization: Which is better?</h2>
+                <p>The assurance of which is better in Containers versus Virtual Machines (VMs) relies upon your objective. However, virtualization empowers remaining tasks at hand to keep running in situations that are isolated from their basic equipment by a layer of reflection. This reflection enables servers to be separated into VMs that can run distinctive working frameworks. </p>
+                <p>Container innovation offers an elective strategy for Virtualization, in which a solitary working framework on a host can run a wide range of users from the cloud. One approach to consider Containers versus VMs is that while VMs run a few distinctive working frameworks on one process hub, while containers offer the chance to virtualize the working framework itself. </p>
+              <p>Conclusion:
+                <p>Containerization and Virtualization differ in many ways, but the primary difference is that containers provide a way to virtualize an OS to run multiple workloads in a single OS instance. With VMs, the hardware is virtualized to run multiple OS instances. The speed, agility, and portability of the container make it another tool to streamline software development.</p>
+            </article><!-- /.blog-post -->
+              </div>
+            </div>
+          </div>
+
+  </div>
+</div>
+<div class="container overflow-hidden">
+  <div class="row gy-4">
+    <div class="col-3">
+  <!-- Content here -->
+</div>
+
+
+</main>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
